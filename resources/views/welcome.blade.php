@@ -74,7 +74,7 @@
                                         "
                                     />
                                     <img
-                                        src="https://laravel.com/assets/img/welcome/docs-dark.svg"
+                                        src="https://imgs.search.brave.com/5xu8o1RNBMDkyBHgzjRcXqYsM0XuAtYAozqoy_SuOPc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtcHJlbWl1/bS9jb25jZXB0by1k/ZXNhcnJvbGxvLXdl/Yi1zaXRpb3MtcGFn/aW5hcy1pbnRlcm5l/dC1yZWQtZ2xvYmFs/XzEwMjU4My00ODky/LmpwZz9zaXplPTYy/NiZleHQ9anBn"
                                         alt="Laravel documentation screenshot"
                                         class="hidden aspect-video h-full w-full flex-1 rounded-[10px] object-top object-cover drop-shadow-[0px_4px_34px_rgba(0,0,0,0.25)] dark:block"
                                     />
@@ -90,15 +90,14 @@
                                         </div>
 
                                         <div class="pt-3 sm:pt-5 lg:pt-0">
-                                            <h2 class="text-xl font-semibold text-black dark:text-white">Documentation</h2>
+                                            <h2 class="text-xl font-semibold text-black dark:text-white">DESARROLLO WEB AVANZADO</h2>
 
                                             <p class="mt-4 text-sm/relaxed">
-                                                Laravel has wonderful documentation covering every aspect of the framework. Whether you are a newcomer or have prior experience with Laravel, we recommend reading our documentation from beginning to end.
+                                                Materia: Desarrollo Web Avanzado
                                             </p>
                                         </div>
                                     </div>
 
-                                    <svg class="size-6 shrink-0 stroke-[#FF2D20]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg>
                                 </div>
                             </a>
 

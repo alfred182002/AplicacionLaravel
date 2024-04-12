@@ -53,13 +53,13 @@
                   </div>
 
                   <div class="text-center pt-1 mb-5 pb-1">
-                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Iniciar Sesion</button>
+                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Iniciar Sesion</button>
                     <a class="text-muted" href="#!">¿Olvidaste tu contraseña?</a>
                   </div>
 
                   <div class="d-flex align-items-center justify-content-center pb-4">
                     <p class="mb-0 me-2">¿No tienes una cuenta?</p>
-                    <button type="button" class="btn btn-outline-danger">Crear Cuenta Nueva</button>
+                    <a href="{{route('register')}}" class="btn btn-outline-danger">Crear Cuenta Nueva</a>
                   </div>
 
                 </form>
