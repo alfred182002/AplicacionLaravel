@@ -6,3 +6,4 @@
     <input type="password" name="password" placeholder="Contraseña">
     <button type="submit">Guardar</button>
 </form>
+        

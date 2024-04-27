@@ -27,12 +27,22 @@
                     <td>{{ $usuario->name }}</td>
                     <td>{{ $usuario->email }}</td>
                 </tr>
+                <td>
+                    <a href="{{ route('usuarios.editar', $usuario->id) }}" class="btn btn-primary">Editar</a>
+                    <!-- Formulario para enviar solicitud DELETE -->
+                    <form action="{{ route('usuarios.eliminar', $usuario->id) }}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                        </form>
+                    </td>
+                </tr>
                 @endforeach
             </tbody>
         </table>
     </div>
 
-    <!-- Incluir scripts de Bootstrap si los estás utilizando -->
+  
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -10,7 +10,12 @@
 </head>
 <body>
     <nav class="navbar navbar-dark bg-danger">
-        <a class="navbar-brand" href="#">BIENVENIDO</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#" style="font-size: 24px; font-weight: bold; color: #007bff;">BIENVENIDO</a>
+            </div>
+        </nav>
+        
         <!-- Dropdown menu for user -->
 <li class="nav-item dropdown">
     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -59,7 +64,8 @@
     <form action="{{ route('usuarios.eliminar', $usuario->id) }}" method="POST">
         @csrf
         @method('DELETE')
-        <button type="submit" class="btn btn-danger">Eliminar</button>
+        
+        <br> <br><button type="submit" class="btn btn-danger">Eliminar</button>
     </form>
 </td>
 <!-- Bootstrap JavaScript Libraries -->

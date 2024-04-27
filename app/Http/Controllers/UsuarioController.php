@@ -24,33 +24,7 @@ class UsuarioController extends Controller
 
         return redirect()->route('usuarios.index')->with('success', 'Usuario creado correctamente');
     }
-
-    public function editar($id)
-    {
-        // Obtener el usuario por su ID y mostrar el formulario de edición
-        $usuario = User::findOrFail($id);
-        return view('usuarios.editar', compact('usuario'));
-    }
-
-    public function actualizar(Request $request, $id)
-    {
-        // Validar y actualizar los datos del usuario
-        $usuario = User::findOrFail($id);
-        $usuario->name = $request->input('name');
-        $usuario->email = $request->input('email');
-        $usuario->save();
-
-        return redirect()->route('usuarios.index')->with('success', 'Usuario actualizado correctamente');
-    }
-
-    public function eliminar($id)
-    {
-        // Eliminar un usuario por su ID
-        $usuario = User::findOrFail($id);
-        $usuario->delete();
-
-        return redirect()->route('usuarios.index')->with('success', 'Usuario eliminado correctamente');
-    }
+   
     public function index()
     {
         // Obtener todos los usuarios desde el modelo User
@@ -61,5 +35,29 @@ class UsuarioController extends Controller
     }
 
     // Otros métodos del controlador para crear, editar, eliminar usuarios, etc.
+    public function eliminar($id)
+{
+    // Encuentra el usuario por su ID y elimínalo
+    $usuario = User::findOrFail($id);
+    $usuario->delete();
+
+    // Redirecciona de vuelta a la lista de usuarios (index) con un mensaje
+    return redirect()->route('usuarios.index')->with('success', 'Usuario eliminado exitosamente');
+}
+public function editar($id)
+{
+    $usuario = User::findOrFail($id);
+    return view('usuarios.editar', compact('usuario'));
+}
+
+public function actualizar(Request $request, $id)
+{
+    $usuario = User::findOrFail($id);
+    $usuario->name = $request->input('name');
+    $usuario->email = $request->input('email');
+    $usuario->save();
+
+    return redirect()->route('usuarios.index')->with('success', 'Usuario actualizado exitosamente');
+}
 
 }
