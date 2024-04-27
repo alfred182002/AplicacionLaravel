@@ -76,5 +76,20 @@
             @yield('content')
         </main>
     </div>
+    @foreach($usuarios as $usuario)
+    <tr>
+        <td>{{ $usuario->id }}</td>
+        <td>{{ $usuario->name }}</td>
+        <td>{{ $usuario->email }}</td>
+        <td>
+            <a href="{{ route('usuarios.editar', $usuario->id) }}" class="btn btn-primary">Editar</a>
+            <form action="{{ route('usuarios.eliminar', $usuario->id) }}" method="POST">
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="btn btn-danger">Eliminar</button>
+            </form>
+        </td>
+    </tr>
+@endforeach
 </body>
 </html>

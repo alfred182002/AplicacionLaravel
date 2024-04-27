@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Registro</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -17,7 +17,10 @@
             crossorigin="anonymous">    
 
         <link rel= "stylesheet" href="{{ asset('assets/estilos.css')}}">         
-        />
+
+
+
+        
     </head>
 
     <body>
