@@ -32,3 +32,4 @@ Route::get('/usuarios', [UsuarioController::class, 'index'])->name('usuarios.ind
 Route::delete('/usuarios/{id}', [UsuarioController::class, 'eliminar'])->name('usuarios.eliminar');
 Route::get('/usuarios/{id}/editar', [UsuarioController::class, 'editar'])->name('usuarios.editar');
 Route::put('/usuarios/{id}', [UsuarioController::class, 'actualizar'])->name('usuarios.actualizar');
+
